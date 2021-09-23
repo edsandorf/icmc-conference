@@ -1,0 +1,111 @@
+/* Import variables */
+@import "colors";
+@import "prism";
+@import "navigation";
+@import "search";
+@import "timeline";
+@import "card-deck";
+@import "feed";
+@import "to-the-top";
+@import "polaroid-img";
+@import "carousel";
+@import "postcard";
+@import "header";
+@import "footer";
+
+/* Body */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: $text-color-primary;
+  font-family: Verdana, Geneva, sans-serif;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.body-push {
+  min-height: calc(100vh - 250px); // subtract the height + margin of footer
+}
+
+.container-extended {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.container-offset {
+  margin-top: 0px;
+}
+
+@media only screen and (min-width: 768px) {
+  .container-offset {
+    margin-top: -60px;
+  }
+}
+
+/* Images */
+img {
+  max-width: 100%;
+}
+
+.round-circle-extended {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* Section headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+  color: $color-primary;
+}
+
+/* Hyperlinks */
+a {
+  color: $color-secondary;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-primary;
+    text-decoration: none;
+  }
+}
+
+/* Blockquote */
+blockquote {
+  padding: 0 1rem;
+  margin-left: 0;
+  color: $text-color-blockquote;
+  border-left: 0.3rem solid $color-primary;
+
+  > :first-child {
+    margin-top: 0;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Div */
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+.map-container {
+  margin: 5px;
+}
